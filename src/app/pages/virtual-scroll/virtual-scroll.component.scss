@@ -1,0 +1,26 @@
+.example-viewport {
+  height: 355px;
+  width: calc(100% - 50px);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 25px;
+}
+
+::ng-deep .data-table {
+  thead {
+    .mat-mdc-header-row {
+      height: 36px;
+      .mat-mdc-header-cell {
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+  tbody {
+    .mat-mdc-row {
+      height: 32px;
+      .mat-mdc-cell {
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+}

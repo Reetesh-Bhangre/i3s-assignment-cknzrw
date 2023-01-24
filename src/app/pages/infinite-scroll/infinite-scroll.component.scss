@@ -1,0 +1,27 @@
+::ng-deep .data-table-wrapper {
+  width: calc(100% - 50px);
+  max-height: 355px;
+  overflow: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 25px;
+  .data-table {
+    thead {
+      .mat-mdc-header-row {
+        height: 36px;
+        background-color: #fff;
+        .mat-mdc-header-cell {
+          border-right: 1px solid rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+    tbody {
+      .mat-mdc-row {
+        height: 32px;
+        .mat-mdc-cell {
+          border-right: 1px solid rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+  }
+}

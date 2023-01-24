@@ -1,0 +1,30 @@
+<div class="data-table-wrapper" #dataTable (scroll)="onscroll()">
+<table class="data-table" mat-table [dataSource]="dataSource">
+  <!-- Id Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef>Id</th>
+    <td mat-cell *matCellDef="let record">{{ record.id }}</td>
+  </ng-container>
+
+  <!-- Title Column -->
+  <ng-container matColumnDef="title">
+    <th mat-header-cell *matHeaderCellDef>Title</th>
+    <td mat-cell *matCellDef="let record">{{ record.title }}</td>
+  </ng-container>
+
+  <!-- completed Column -->
+  <ng-container matColumnDef="completed">
+    <th mat-header-cell *matHeaderCellDef>Completed</th>
+    <td mat-cell *matCellDef="let record">{{ record.completed }}</td>
+  </ng-container>
+
+  <!-- user Id Column -->
+  <ng-container matColumnDef="userId">
+    <th mat-header-cell *matHeaderCellDef>User Id</th>
+    <td mat-cell *matCellDef="let record">{{ record.userId }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+</div>

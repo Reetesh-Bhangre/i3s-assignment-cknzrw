@@ -1,0 +1,17 @@
+header {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    background-color: #6ea8dc;
+    margin: 5px;
+    padding: 8px 15px;
+    border: 1px solid #2079ca;
+    color: #fff;
+    text-decoration: none;
+    &.active {
+      background-color: #2964b1;
+    }
+  }
+}
